@@ -9,7 +9,7 @@ Lucas Lamounier
 
 Contato:
 =======================================================================
-Web: https://lucaslamounier08.github.io/portfolio/
+Web: https://lucaslamounier08.github.io/
 Email: lucaslamounier08@gmail.com
 
 License: 
