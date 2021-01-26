@@ -80,6 +80,10 @@ const i18nLangs = {
     section_education_certificate_pspo1_description: "Professional Scrum Product Owner 1 (PSPO 1) - Scrum.org",
     section_education_certificate_pspo1_year: "(2020)",
 
+    section_education_certificate_sixsigma: "Six Sigma Yellow Belt",
+    section_education_certificate_sixsigma_description: "Six Sigma Yellow Belt",
+    section_education_certificate_sixsigma_year: "(2019)",
+
     section_languages: "Languages",
     section_languages_portuguese: "Portuguese:",
     section_languages_english: "English:",
