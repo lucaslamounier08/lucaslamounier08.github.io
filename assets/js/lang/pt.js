@@ -4,7 +4,7 @@ const i18nLangs = {
     name: "Lucas Lamounier Faria",
     portfolio: "Portifolio",
     profile_title: "Engenheiro da Computação",
-    profile_certification: "PSM 1 & PSPO 1 certificado. Desenvolvedor Java.",
+    profile_certification: "PSM 1, PSPO 1 & PSK 1 certificado. Desenvolvedor Java.",
     profile_contact: "  Contato",
 
     language: "Idioma  ",
@@ -79,6 +79,10 @@ const i18nLangs = {
     section_education_certificate_pspo1: "Professional Scrum Product Owner 1",
     section_education_certificate_pspo1_description: "Professional Scrum Product Owner 1 (PSPO 1) pela Scrum.org",
     section_education_certificate_pspo1_year: "(2020)",
+
+    section_education_certificate_psk1: "Professional Scrum with Kanban 1",
+    section_education_certificate_psk1_description: "Professional Scrum with Kanban 1 (PSPO 1) - Scrum.org",
+    section_education_certificate_psk1_year: "(2021)",
 
     section_education_certificate_sixsigma: "Six Sigma Yellow Belt",
     section_education_certificate_sixsigma_description: "Six Sigma Yellow Belt",
