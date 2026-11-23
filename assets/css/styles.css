@@ -694,25 +694,29 @@ button {
 }
 
 /* ==========================================================================
-   Projects & FalconApps
+   Projects & FalconApps (Categorized Compact Grid)
    ========================================================================== */
-.projects-layout {
+.projects-intro-row {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
   gap: 2rem;
+  align-items: baseline;
+  margin-bottom: 2.25rem;
 }
 
-.projects-aside {
+.projects-intro-body {
   display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-  padding-top: 0.2rem;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
 }
 
 .projects-aside-text {
-  font-size: 0.88rem;
+  font-size: 0.94rem;
   line-height: 1.6;
   color: var(--ink-secondary);
+  max-width: 60ch;
   margin: 0;
 }
 
@@ -720,13 +724,13 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  align-self: flex-start;
   font-family: var(--font-mono);
   font-size: 0.78rem;
   font-weight: 500;
   color: var(--accent);
   border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
   padding-bottom: 0.15rem;
+  white-space: nowrap;
   transition: border-color var(--transition), color var(--transition);
 }
 
@@ -740,16 +744,56 @@ button {
   height: 13px;
 }
 
+.project-groups {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-group {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 2rem;
+  padding-block: 1.75rem;
+  border-top: 1px solid var(--border);
+  align-items: start;
+}
+
+.project-group:last-child {
+  padding-bottom: 0;
+}
+
+.project-group-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-top: 0.15rem;
+}
+
+.project-group-title {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0;
+}
+
+.project-group-sub {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem;
+  gap: 0.85rem;
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
+  padding: 1rem 1.15rem;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   background-color: var(--surface);
@@ -762,41 +806,19 @@ button {
 
 .project-card-head {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   justify-content: space-between;
-  gap: 0.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.project-kicker {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin: 0;
-}
-
-.project-arrow {
-  width: 15px;
-  height: 15px;
-  flex-shrink: 0;
-  color: var(--ink-muted);
-  transition: transform var(--transition), color var(--transition);
-}
-
-.project-card:hover .project-arrow {
-  color: var(--accent);
-  transform: translate(2px, -2px);
+  gap: 0.65rem;
+  margin-bottom: 0.35rem;
 }
 
 .project-title {
   font-family: var(--font-serif);
-  font-size: 1.3rem;
+  font-size: 1.12rem;
   font-weight: 500;
   line-height: 1.25;
   color: var(--ink);
-  margin: 0 0 0.65rem;
+  margin: 0;
   transition: color var(--transition);
 }
 
@@ -804,12 +826,25 @@ button {
   color: var(--accent);
 }
 
+.project-arrow {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: var(--ink-muted);
+  transform: translateY(1px);
+  transition: transform var(--transition), color var(--transition);
+}
+
+.project-card:hover .project-arrow {
+  color: var(--accent);
+  transform: translate(2px, -1px);
+}
+
 .project-desc {
-  font-size: 0.9rem;
-  line-height: 1.62;
+  font-size: 0.84rem;
+  line-height: 1.52;
   color: var(--ink-secondary);
-  margin: 0 0 1.25rem;
-  flex: 1;
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -1142,16 +1177,13 @@ button {
 
   .section-header,
   .role,
-  .projects-layout,
+  .projects-intro-row,
+  .project-group,
   .skill-row,
   .credentials-grid,
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-
-  .projects-aside {
-    margin-bottom: 0.75rem;
   }
 
   .credentials-spacer {

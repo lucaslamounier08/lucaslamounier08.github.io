@@ -92,32 +92,45 @@
       projKicker: '02 / Independent Work',
       projTitle: 'FalconApps & Projects',
       projAside:
-        'Independent studio behind 10,000+ AI creations for 5,000+ users, multi-platform conversational bots, Android games on Google Play, and web tools.',
+        'Products built and operated under FalconApps — 10,000+ AI creations for 5,000+ users, multi-platform bots, Google Play games, web tools, and Chrome extensions.',
       projVisit: 'Visit falconapps.org',
-      proj1Kicker: 'AI & Conversational Commerce',
-      proj1Title: 'WhatsApp AI Bot & Creation Studio',
-      proj1Desc:
-        '20+ on-demand AI services serving 5,000+ customers directly on WhatsApp — custom songs with vocals, 4K personalized Santa videos, LinkedIn headshots, and photo restoration delivered in under 2 minutes via PIX & Stripe.',
-      proj2Kicker: 'Multi-Platform Bots',
-      proj2Title: 'Messenger, Instagram DM & Telegram Bots',
-      proj2Desc:
-        'Global conversational bots across Facebook Messenger, Instagram DM (@tech_falcon_ai), and Telegram (@music_with_ai_bot) delivering custom songs, AI dance videos, and Santa messages with Stripe, Apple Pay, and Telegram Stars.',
-      proj3Kicker: 'Android & Web Game',
-      proj3Title: 'Shape Survivors',
-      proj3Desc:
-        'Minimalist Paper & Ink roguelite arena survival published on Google Play and playable on the web — built with Java and libGDX featuring one-thumb controls, procedural OpenGL graphics, synthesized audio, and 4 secret weapon evolutions.',
-      proj4Kicker: 'Google Play Games',
-      proj4Title: 'Endless Tap Survival, Worst App Ever & Flappy Maker',
-      proj4Desc:
-        'Published Android arcade titles including Endless Tap Survival (wave-based reflex survival), Worst App Ever (satirical UX challenge), and Custom Flappy Bird Maker (editable skins, colors, and game physics).',
-      proj5Kicker: 'Web Apps & Free Tools',
-      proj5Title: 'DopaminaShop & Interactive Generators',
-      proj5Desc:
-        'DopaminaShop — a free therapeutic shopping simulator in 7 languages to curb impulse buying — alongside printable Next.js tools: Santa Letter Maker, Song Lyrics Generator, Baby Milestone Cards, and LinkedIn Headline Generator.',
-      proj6Kicker: 'Browser Automation & More',
-      proj6Title: 'Chrome Extensions & Full Catalog',
-      proj6Desc:
-        'Published Chrome automation extensions — IG Auto-Follow (TypeScript DOM automation) and WA Bulk Message Sender / Pro (WhatsApp Web workflows) — plus playable Canvas games and client web projects.',
+      projGrp1Title: 'AI Bots & Studios',
+      projGrp1Sub: 'WhatsApp · Messenger · IG · Telegram',
+      projBotWaTitle: 'WhatsApp AI Bot',
+      projBotWaDesc:
+        '20+ on-demand AI services (custom songs, 4K Santa videos, photo shoots) delivered in <2 min via PIX & Stripe.',
+      projBotMsgTitle: 'Messenger & Instagram DM Bots',
+      projBotMsgDesc:
+        'Custom songs, AI dance videos, and North Pole messages inside Facebook Messenger and @tech_falcon_ai.',
+      projBotTgTitle: 'Telegram AI Music Bot',
+      projBotTgDesc:
+        '@music_with_ai_bot generating personalized studio tracks worldwide via Stripe and Telegram Stars.',
+      projStudioTitle: 'AI Photo & Video Studio',
+      projStudioDesc:
+        'LinkedIn headshots, old photo restoration, Ghibli/Disney styles, and personalized 4K Santa Claus videos.',
+      projGrp2Title: 'Android Games',
+      projGrp2Sub: 'Google Play · Java · libGDX',
+      projShapeDesc:
+        'Paper & Ink roguelite arena survival built with Java/libGDX, procedural OpenGL, and 4 weapon evolutions.',
+      projTapDesc:
+        'Fast-paced Android reflex survival against escalating enemy waves, published on Google Play.',
+      projWorstDesc:
+        'Satirical Android UX-challenge game designed to test players’ patience on Google Play.',
+      projFlappyDesc:
+        'Customizable arcade game where players edit skins, colors, and game physics.',
+      projGrp3Title: 'Web Apps & Tools',
+      projGrp3Sub: 'Next.js · React · Canvas',
+      projDopaminaDesc:
+        'Free therapeutic online shopping simulator in 7 languages helping users curb impulse buying.',
+      projToolsTitle: 'Free Printable & AI Generators',
+      projToolsDesc:
+        'No-login tools: Song Lyrics, Santa Letter, Baby Milestone Cards, Birthday Cards & LinkedIn Headline.',
+      projGrp4Title: 'Chrome Extensions',
+      projGrp4Sub: 'TypeScript · Browser Automation',
+      projIgExtDesc:
+        'Chrome extension built with TypeScript DOM automation for organic Instagram engagement.',
+      projWaExtDesc:
+        'WhatsApp Web bulk messaging and group workflow automation extensions for Chrome.',
       skillsKicker: '03 / Stack',
       skillsTitle: 'Technical Expertise',
       skillCat1: 'Languages & Frameworks',
@@ -241,32 +254,45 @@
       projKicker: '02 / Projetos Independentes',
       projTitle: 'FalconApps & Projetos',
       projAside:
-        'Estúdio independente por trás de 10.000+ criações com IA para 5.000+ clientes, bots conversacionais multiplataforma, jogos Android na Google Play e ferramentas web.',
+        'Produtos desenvolvidos e operados sob a marca FalconApps — 10.000+ criações com IA para 5.000+ usuários, bots multiplataforma, jogos na Google Play, ferramentas web e extensões Chrome.',
       projVisit: 'Visitar falconapps.org',
-      proj1Kicker: 'IA & Comércio Conversacional',
-      proj1Title: 'Bot de IA no WhatsApp & Estúdio',
-      proj1Desc:
-        'Mais de 20 serviços sob demanda atendendo 5.000+ clientes direto no WhatsApp — músicas personalizadas com voz, vídeos 4K do Papai Noel, fotos profissionais para LinkedIn e restauração de fotos entregues em menos de 2 minutos via PIX e Stripe.',
-      proj2Kicker: 'Bots Multiplataforma',
-      proj2Title: 'Bots para Messenger, Instagram DM & Telegram',
-      proj2Desc:
-        'Bots conversacionais globais no Facebook Messenger, Instagram DM (@tech_falcon_ai) e Telegram (@music_with_ai_bot), gerando músicas sob medida, vídeos de dança com IA e vídeos natalinos com Stripe, Apple Pay e Telegram Stars.',
-      proj3Kicker: 'Jogo Android & Web',
-      proj3Title: 'Shape Survivors',
-      proj3Desc:
-        'Roguelite minimalista de sobrevivência em arena (estética Paper & Ink) publicado na Google Play e jogável no navegador — construído em Java e libGDX com controles de um polegar, gráficos OpenGL procedurais, áudio sintetizado e 4 evoluções secretas.',
-      proj4Kicker: 'Jogos na Google Play',
-      proj4Title: 'Endless Tap Survival, Worst App Ever & Flappy Maker',
-      proj4Desc:
-        'Jogos arcade publicados para Android, incluindo Endless Tap Survival (sobrevivência em ondas de reflexo), Worst App Ever (desafio satírico de UX) e Custom Flappy Bird Maker (edição de skins, cores e física do jogo).',
-      proj5Kicker: 'Apps Web & Ferramentas Grátis',
-      proj5Title: 'DopaminaShop & Geradores Interativos',
-      proj5Desc:
-        'DopaminaShop — simulador terapêutico gratuito de compras em 7 idiomas para controlar compras por impulso — além de ferramentas imprimíveis em Next.js: Cartinha do Papai Noel, Gerador de Letras, Plaquinha de Mêsversário e Resumo para LinkedIn.',
-      proj6Kicker: 'Automação & Catálogo Completo',
-      proj6Title: 'Extensões Chrome & Portfólio FalconApps',
-      proj6Desc:
-        'Extensões de automação publicadas para Chrome — IG Auto-Follow (automação DOM em TypeScript) e WA Bulk Message Sender / Pro (fluxos no WhatsApp Web) — além de jogos em Canvas e projetos web para clientes.',
+      projGrp1Title: 'Bots de IA & Estúdios',
+      projGrp1Sub: 'WhatsApp · Messenger · IG · Telegram',
+      projBotWaTitle: 'Bot de IA no WhatsApp',
+      projBotWaDesc:
+        '20+ serviços sob demanda (músicas personalizadas, vídeos 4K do Papai Noel, ensaios de foto) entregues em <2 min via PIX e Stripe.',
+      projBotMsgTitle: 'Bots para Messenger & Instagram DM',
+      projBotMsgDesc:
+        'Músicas sob medida, vídeos de dança com IA e vídeos natalinos direto no Facebook Messenger e @tech_falcon_ai.',
+      projBotTgTitle: 'Bot de Música com IA no Telegram',
+      projBotTgDesc:
+        '@music_with_ai_bot criando faixas personalizadas no mundo todo com pagamento via Stripe e Telegram Stars.',
+      projStudioTitle: 'Estúdio de Fotos & Vídeos IA',
+      projStudioDesc:
+        'Fotos profissionais para LinkedIn, restauração de fotos antigas, estilos Ghibli/Disney e vídeos 4K do Papai Noel.',
+      projGrp2Title: 'Jogos Android',
+      projGrp2Sub: 'Google Play · Java · libGDX',
+      projShapeDesc:
+        'Roguelite minimalista Paper & Ink feito em Java/libGDX com OpenGL procedural e 4 evoluções secretas.',
+      projTapDesc:
+        'Jogo arcade de sobrevivência por ondas e reflexo rápido para Android, publicado na Google Play.',
+      projWorstDesc:
+        'Jogo satírico de desafio de UX para Android criado para testar a paciência dos jogadores na Google Play.',
+      projFlappyDesc:
+        'Versão arcade customizável onde o jogador edita skins, cores e física do jogo.',
+      projGrp3Title: 'Apps Web & Ferramentas',
+      projGrp3Sub: 'Next.js · React · Canvas',
+      projDopaminaDesc:
+        'Simulador terapêutico gratuito de compras online em 7 idiomas para ajudar a controlar compras por impulso.',
+      projToolsTitle: 'Geradores Gratuitos & Imprimíveis',
+      projToolsDesc:
+        'Ferramentas sem login: Letra de Música, Cartinha do Papai Noel, Mêsversário, Cartão de Aniversário e Bio do LinkedIn.',
+      projGrp4Title: 'Extensões Chrome',
+      projGrp4Sub: 'TypeScript · Automação de Navegador',
+      projIgExtDesc:
+        'Extensão Chrome em TypeScript com automação DOM para engajamento orgânico no Instagram.',
+      projWaExtDesc:
+        'Extensões Chrome para envio em massa e automação de fluxos no WhatsApp Web.',
       skillsKicker: '03 / Stack',
       skillsTitle: 'Especialidades Técnicas',
       skillCat1: 'Linguagens & Frameworks',
