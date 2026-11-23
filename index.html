@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucas Lamounier Faria — Senior Java Backend Engineer</title>
+  <meta name="description" content="Senior Java Backend Engineer with 7+ years building resilient microservices, event-driven architectures, and payment systems with Java, Spring Boot, Kubernetes, GCP, and Azure.">
+  <meta name="author" content="Lucas Lamounier Faria">
+  <link rel="canonical" href="https://lucaslamounier08.github.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lucaslamounier08.github.io/">
+  <meta property="og:title" content="Lucas Lamounier Faria — Senior Java Backend Engineer">
+  <meta property="og:description" content="7+ years building cloud-native Java microservices, distributed systems, and PCI-regulated payment platforms.">
+  <meta property="og:image" content="https://lucaslamounier08.github.io/assets/images/portrait.jpg">
+  <meta property="og:image:alt" content="Portrait of Lucas Lamounier Faria">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lucas Lamounier Faria — Senior Java Backend Engineer">
+  <meta name="twitter:description" content="7+ years building cloud-native Java microservices, distributed systems, and PCI-regulated payment platforms.">
+  <meta name="twitter:image" content="https://lucaslamounier08.github.io/assets/images/portrait.jpg">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" href="favicon.ico" sizes="any">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Prevent theme flash -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('portfolio_theme');
+        if (saved === 'dark' || saved === 'light') {
+          document.documentElement.setAttribute('data-theme', saved);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lucas Lamounier Faria",
+    "jobTitle": "Senior Java Backend Engineer",
+    "url": "https://lucaslamounier08.github.io/",
+    "image": "https://lucaslamounier08.github.io/assets/images/portrait.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/lucaslamounier08/",
+      "https://github.com/lucaslamounier08",
+      "https://falconapps.org/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Itajubá",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Lucas Lamounier Faria — Home">
+        Lucas Lamounier Faria<span class="brand-dot" aria-hidden="true"></span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary navigation">
+        <a class="nav-link" href="#experience" data-i18n="navExperience">Experience</a>
+        <a class="nav-link" href="#projects" data-i18n="navProjects">Projects</a>
+        <a class="nav-link" href="#expertise" data-i18n="navExpertise">Expertise</a>
+        <a class="nav-link" href="#credentials" data-i18n="navCredentials">Education</a>
+        <a class="nav-link" href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="header-controls">
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+        </div>
+
+        <button type="button" class="icon-btn" id="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          </svg>
+        </button>
+
+        <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <div class="container mobile-nav-inner">
+        <a class="mobile-nav-link" href="#experience" data-i18n="navExperience">Experience</a>
+        <a class="mobile-nav-link" href="#projects" data-i18n="navProjects">Projects</a>
+        <a class="mobile-nav-link" href="#expertise" data-i18n="navExpertise">Expertise</a>
+        <a class="mobile-nav-link" href="#credentials" data-i18n="navCredentials">Education</a>
+        <a class="mobile-nav-link" href="#contact" data-i18n="navContact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <p class="hero-eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-i18n="eyebrow">Senior Java Backend Engineer · Brazil (UTC-3) · Remote US &amp; UK</span>
+          </p>
+
+          <h1 class="hero-title" data-i18n="heroTitle" data-i18n-html>
+            Designing resilient <em>distributed systems</em> &amp; payment backends.
+          </h1>
+
+          <p class="hero-summary" data-i18n="heroSummary">
+            Backend engineer with 7+ years building cloud-native microservices and APIs with Java and Spring Boot across fintech, payments, and enterprise platforms. Currently embedded with US and UK product teams at Acorns/goHenry via Turing; previously Technical Lead at Ambev Tech and payments engineer at HST.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="c/Lucas_Lamounier_Faria_CV.pdf" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              <span data-i18n="btnDownloadCv">Download CV (PDF)</span>
+            </a>
+
+            <a class="btn btn-secondary" href="#contact" data-i18n="btnContact">Get in touch</a>
+          </div>
+
+          <div class="hero-links">
+            <a class="text-link" href="https://www.linkedin.com/in/lucaslamounier08/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+              LinkedIn
+            </a>
+
+            <a class="text-link" href="https://github.com/lucaslamounier08" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              GitHub
+            </a>
+
+            <a class="text-link" href="https://falconapps.org/en" data-href-en="https://falconapps.org/en" data-href-pt="https://falconapps.org/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              falconapps.org
+            </a>
+          </div>
+        </div>
+
+        <figure class="portrait-figure">
+          <div class="portrait-frame">
+            <img src="assets/images/portrait.jpg" alt="Portrait of Lucas Lamounier Faria" width="1000" height="1206" fetchpriority="high">
+          </div>
+          <figcaption class="portrait-caption">
+            <span data-i18n="portraitCaptionLeft">Lucas Lamounier Faria</span>
+            <span data-i18n="portraitCaptionRight">Itajubá, MG · UTC-3</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Engineering Ledger -->
+    <div class="ledger" aria-label="Career highlights">
+      <div class="container ledger-grid">
+        <div class="ledger-item">
+          <p class="ledger-label" data-i18n="ledger1Title">7+ Years</p>
+          <p class="ledger-desc" data-i18n="ledger1Desc">Production Java &amp; Spring Boot backend engineering.</p>
+        </div>
+        <div class="ledger-item">
+          <p class="ledger-label" data-i18n="ledger2Title">Fintech &amp; Payments</p>
+          <p class="ledger-desc" data-i18n="ledger2Desc">PCI-regulated tokenization &amp; high-throughput systems.</p>
+        </div>
+        <div class="ledger-item">
+          <p class="ledger-label" data-i18n="ledger3Title">Cloud &amp; Kubernetes</p>
+          <p class="ledger-desc" data-i18n="ledger3Desc">GCP &amp; Azure workloads monitored with Datadog.</p>
+        </div>
+        <div class="ledger-item">
+          <p class="ledger-label" data-i18n="ledger4Title">End-to-End Ownership</p>
+          <p class="ledger-desc" data-i18n="ledger4Desc">Architecture, testing, CI/CD, and squad leadership.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-kicker" data-i18n="expKicker">01 / Career</p>
+          <h2 class="section-title" data-i18n="expTitle">Experience</h2>
+        </div>
+
+        <div class="experience-list">
+          <!-- Acorns / goHenry -->
+          <article class="role" data-reveal>
+            <div class="role-meta">
+              <span class="role-dates" data-i18n="role1Dates">Mar 2025 – Present</span>
+              <span class="role-location" data-i18n="role1Loc">Remote · US &amp; UK Teams</span>
+              <span class="role-badge" data-i18n="currentBadge">Current</span>
+            </div>
+            <div>
+              <h3 class="role-heading">
+                <span class="role-company">Acorns / goHenry</span>
+                <span class="role-title" data-i18n="role1Title">Senior Java Backend Engineer (via Turing)</span>
+              </h3>
+              <p class="role-context" data-i18n="role1Context">
+                Embedded with the goHenry / Acorns Early product and engineering teams — a debit card and money app for kids and teens.
+              </p>
+              <ul class="role-bullets">
+                <li data-i18n="role1B1">Designed and built a Backend-for-Frontend (BFF) exposing REST endpoints to the mobile app and translating requests into GraphQL queries against a downstream system.</li>
+                <li data-i18n="role1B2">Build and maintain Java 21 / Spring Boot 3.x microservices integrated through Spring Cloud OpenFeign (synchronous) and RabbitMQ (asynchronous) for resilient workflows.</li>
+                <li data-i18n="role1B3">Deploy and operate services on Google Cloud Platform (GCP) with Kubernetes; monitor production health and troubleshoot incidents using Datadog.</li>
+                <li data-i18n="role1B4">Maintain automated unit, integration, and end-to-end tests (including Testcontainers), support CI/CD pipelines, and adopt AI-assisted engineering workflows (Claude, Cursor).</li>
+              </ul>
+              <div class="tag-row" aria-label="Technologies used">
+                <span class="tag">Java 21</span>
+                <span class="tag">Spring Boot 3</span>
+                <span class="tag">BFF / GraphQL</span>
+                <span class="tag">OpenFeign</span>
+                <span class="tag">RabbitMQ</span>
+                <span class="tag">GCP &amp; Kubernetes</span>
+                <span class="tag">Datadog</span>
+                <span class="tag">Testcontainers</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Ambev Tech -->
+          <article class="role" data-reveal>
+            <div class="role-meta">
+              <span class="role-dates" data-i18n="role2Dates">Jun 2022 – Feb 2025</span>
+              <span class="role-location" data-i18n="role2Loc">Brazil · Remote</span>
+            </div>
+            <div>
+              <h3 class="role-heading">
+                <span class="role-company">Ambev Tech</span>
+                <span class="role-title" data-i18n="role2Title">Senior Java Developer &amp; Technical Lead</span>
+              </h3>
+              <p class="role-context" data-i18n="role2Context">
+                Technology organization of Ambev, one of Brazil’s largest companies. Multi-module invoice-management platform.
+              </p>
+              <ul class="role-bullets">
+                <li data-i18n="role2B1">Served as technical lead of a development squad: mentored junior engineers, reviewed code, guided architectural decisions, and facilitated backlog refinement.</li>
+                <li data-i18n="role2B2">Drove the modernization of a multi-module invoice-management platform from a monolith toward a cloud-native, multi-tenant microservices architecture on Microsoft Azure.</li>
+                <li data-i18n="role2B3">Redesigned core workflows as an event-driven architecture (RabbitMQ, Azure Service Bus) with reactive Java (Project Reactor) in selected components for scalable asynchronous processing.</li>
+                <li data-i18n="role2B4">Built and maintained Azure CI/CD pipelines automating deployments to Virtual Machines and AKS; applied hexagonal architecture with Redis, Azure Blob Storage, SQL Server, and MongoDB.</li>
+              </ul>
+              <div class="tag-row" aria-label="Technologies used">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Project Reactor</span>
+                <span class="tag">Azure AKS</span>
+                <span class="tag">Service Bus</span>
+                <span class="tag">RabbitMQ</span>
+                <span class="tag">Redis</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Hexagonal Architecture</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- HST -->
+          <article class="role" data-reveal>
+            <div class="role-meta">
+              <span class="role-dates" data-i18n="role3Dates">May 2021 – May 2022</span>
+              <span class="role-location" data-i18n="role3Loc">Campinas, SP · Brazil</span>
+            </div>
+            <div>
+              <h3 class="role-heading">
+                <span class="role-company">HST</span>
+                <span class="role-title" data-i18n="role3Title">Mid-Level Java Developer</span>
+              </h3>
+              <p class="role-context" data-i18n="role3Context">
+                Payment tokenization and digital payment integrations for Latin American banks, working directly with Visa and Mastercard network standards.
+              </p>
+              <ul class="role-bullets">
+                <li data-i18n="role3B1">Built secure Spring Boot services for payment tokenization and payment messaging in a PCI-regulated environment.</li>
+                <li data-i18n="role3B2">Maintained mission-critical Java EJB systems processing thousands of transactions per second in an always-on environment.</li>
+                <li data-i18n="role3B3">Designed microservices and REST APIs documented with OpenAPI (Swagger) for internal and partner engineering teams.</li>
+                <li data-i18n="role3B4">Automated Jenkins deployment pipelines and containerized services with Docker on WildFly, integrating PostgreSQL, MongoDB, and RabbitMQ.</li>
+              </ul>
+              <div class="tag-row" aria-label="Technologies used">
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Java EJB</span>
+                <span class="tag">PCI / Tokenization</span>
+                <span class="tag">OpenAPI</span>
+                <span class="tag">Docker &amp; WildFly</span>
+                <span class="tag">Jenkins</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">RabbitMQ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- TCS -->
+          <article class="role" data-reveal>
+            <div class="role-meta">
+              <span class="role-dates" data-i18n="role4Dates">Feb 2020 – Apr 2021</span>
+              <span class="role-location" data-i18n="role4Loc">Barueri, SP · Brazil</span>
+            </div>
+            <div>
+              <h3 class="role-heading">
+                <span class="role-company">Tata Consultancy Services</span>
+                <span class="role-title" data-i18n="role4Title">Support Analyst &amp; Java Developer</span>
+              </h3>
+              <p class="role-context" data-i18n="role4Context">
+                Enterprise Java/JSF and Oracle systems supporting multi-franchise operations.
+              </p>
+              <ul class="role-bullets">
+                <li data-i18n="role4B1">Implemented Spring Boot APIs to centralize financial reporting across multiple franchises, replacing manual, fragmented processes.</li>
+                <li data-i18n="role4B2">Developed internal Java diagnostic tools enabling real-time issue resolution and reducing support response times.</li>
+                <li data-i18n="role4B3">Partnered directly with end users and stakeholders to gather requirements and improve legacy Java/JSF and Oracle Forms &amp; Reports / PL/SQL applications.</li>
+              </ul>
+              <div class="tag-row" aria-label="Technologies used">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">JSF</span>
+                <span class="tag">Oracle Database</span>
+                <span class="tag">PL/SQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- B2ML -->
+          <article class="role" data-reveal>
+            <div class="role-meta">
+              <span class="role-dates" data-i18n="role5Dates">Jan 2019 – Feb 2020</span>
+              <span class="role-location" data-i18n="role5Loc">Itajubá, MG · Brazil</span>
+            </div>
+            <div>
+              <h3 class="role-heading">
+                <span class="role-company">B2ML Sistemas</span>
+                <span class="role-title" data-i18n="role5Title">Full Stack Developer</span>
+              </h3>
+              <p class="role-context" data-i18n="role5Context">
+                Clinic-management platform used by healthcare providers across Brazil.
+              </p>
+              <ul class="role-bullets">
+                <li data-i18n="role5B1">Built backend and frontend features and RESTful APIs using Java 8, Spring MVC, Hibernate, JSF, PrimeFaces, and PostgreSQL.</li>
+              </ul>
+              <div class="tag-row" aria-label="Technologies used">
+                <span class="tag">Java 8</span>
+                <span class="tag">Spring MVC</span>
+                <span class="tag">Hibernate</span>
+                <span class="tag">JSF / PrimeFaces</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects & FalconApps -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-kicker" data-i18n="projKicker">02 / Independent Work</p>
+          <h2 class="section-title" data-i18n="projTitle">FalconApps &amp; Projects</h2>
+        </div>
+
+        <div class="projects-layout" data-reveal>
+          <aside class="projects-aside">
+            <p class="projects-aside-text" data-i18n="projAside">
+              Independent studio behind 10,000+ AI creations for 5,000+ users, multi-platform conversational bots, Android games on Google Play, and web tools.
+            </p>
+            <a class="projects-visit-link" href="https://falconapps.org/en" data-href-en="https://falconapps.org/en" data-href-pt="https://falconapps.org/" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="projVisit">Visit falconapps.org</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7M7 7h10v10"/>
+              </svg>
+            </a>
+          </aside>
+
+          <div class="projects-grid">
+            <a class="project-card" href="https://falconapps.org/en/ai-whatsapp-bot" data-href-en="https://falconapps.org/en/ai-whatsapp-bot" data-href-pt="https://falconapps.org/bot-whatsapp" target="_blank" rel="noopener noreferrer">
+              <div class="project-card-head">
+                <p class="project-kicker" data-i18n="proj1Kicker">AI &amp; Conversational Commerce</p>
+                <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7M7 7h10v10"/>
+                </svg>
+              </div>
+              <h3 class="project-title" data-i18n="proj1Title">WhatsApp AI Bot &amp; Creation Studio</h3>
+              <p class="project-desc" data-i18n="proj1Desc">
+                20+ on-demand AI services serving 5,000+ customers directly on WhatsApp — custom songs with vocals, 4K personalized Santa videos, LinkedIn headshots, and photo restoration delivered in under 2 minutes via PIX &amp; Stripe.
+              </p>
+              <div class="tag-row" aria-label="Technologies used">
+                <span class="tag">WhatsApp Bot</span>
+                <span class="tag">Generative AI</span>
+                <span class="tag">Stripe &amp; PIX</span>
+                <span class="tag">Webhooks</span>
+              </div>
+            </a>
+
+            <a class="project-card" href="https://falconapps.org/en/ai-music-generator-messenger" data-href-en="https://falconapps.org/en/ai-music-generator-messenger" data-href-pt="https://falconapps.org/bot-musica-telegram" target="_blank" rel="noopener noreferrer">
+              <div class="project-card-head">
+                <p class="project-kicker" data-i18n="proj2Kicker">Multi-Platform Bots</p>
+                <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7M7 7h10v10"/>
+                </svg>
+              </div>
+              <h3 class="project-title" data-i18n="proj2Title">Messenger, Instagram DM &amp; Telegram Bots</h3>
+              <p class="project-desc" data-i18n="proj2Desc">
+                Global conversational bots across Facebook Messenger, Instagram DM (@tech_falcon_ai), and Telegram (@music_with_ai_bot) delivering custom songs, AI dance videos, and Santa messages with Stripe, Apple Pay, and Telegram Stars.
+              </p>
+              <div class="tag-row" aria-label="Technologies used">
+                <span class="tag">Telegram Stars</span>
+                <span class="tag">Messenger</span>
+                <span class="tag">Instagram DM</span>
+                <span class="tag">Bot APIs</span>
+              </div>
+            </a>
+
+            <a class="project-card" href="https://falconapps.org/en/shape-survivors" data-href-en="https://falconapps.org/en/shape-survivors" data-href-pt="https://falconapps.org/shape-survivors" target="_blank" rel="noopener noreferrer">
+              <div class="project-card-head">
+                <p class="project-kicker" data-i18n="proj3Kicker">Android &amp; Web Game</p>
+                <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7M7 7h10v10"/>
+                </svg>
+              </div>
+              <h3 class="project-title" data-i18n="proj3Title">Shape Survivors</h3>
+              <p class="project-desc" data-i18n="proj3Desc">
+                Minimalist Paper &amp; Ink roguelite arena survival published on Google Play and playable on the web — built with Java and libGDX featuring one-thumb controls, procedural OpenGL graphics, synthesized audio, and 4 secret weapon evolutions.
+              </p>
+              <div class="tag-row" aria-label="Technologies used">
+                <span class="tag">Android</span>
+                <span class="tag">Java</span>
+                <span class="tag">libGDX</span>
+                <span class="tag">OpenGL</span>
+              </div>
+            </a>
+
+            <a class="project-card" href="https://falconapps.org/en/endless-tap-survival" data-href-en="https://falconapps.org/en/endless-tap-survival" data-href-pt="https://falconapps.org/endless-tap-survival" target="_blank" rel="noopener noreferrer">
+              <div class="project-card-head">
+                <p class="project-kicker" data-i18n="proj4Kicker">Google Play Games</p>
+                <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7M7 7h10v10"/>
+                </svg>
+              </div>
+              <h3 class="project-title" data-i18n="proj4Title">Endless Tap Survival, Worst App Ever &amp; Flappy Maker</h3>
+              <p class="project-desc" data-i18n="proj4Desc">
+                Published Android arcade titles including Endless Tap Survival (wave-based reflex survival), Worst App Ever (satirical UX challenge), and Custom Flappy Bird Maker (editable skins, colors, and game physics).
+              </p>
+              <div class="tag-row" aria-label="Technologies used">
+                <span class="tag">Android</span>
+                <span class="tag">Java</span>
+                <span class="tag">Game Physics</span>
+                <span class="tag">Google Play</span>
+              </div>
+            </a>
+
+            <a class="project-card" href="https://falconapps.org/en/dopamine-shop" data-href-en="https://falconapps.org/en/dopamine-shop" data-href-pt="https://falconapps.org/dopamina-shop" target="_blank" rel="noopener noreferrer">
+              <div class="project-card-head">
+                <p class="project-kicker" data-i18n="proj5Kicker">Web Apps &amp; Free Tools</p>
+                <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7M7 7h10v10"/>
+                </svg>
+              </div>
+              <h3 class="project-title" data-i18n="proj5Title">DopaminaShop &amp; Interactive Generators</h3>
+              <p class="project-desc" data-i18n="proj5Desc">
+                DopaminaShop — a free therapeutic shopping simulator in 7 languages to curb impulse buying — alongside printable Next.js tools: Santa Letter Maker, Song Lyrics Generator, Baby Milestone Cards, and LinkedIn Headline Generator.
+              </p>
+              <div class="tag-row" aria-label="Technologies used">
+                <span class="tag">Next.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">i18n (7 langs)</span>
+                <span class="tag">SEO</span>
+              </div>
+            </a>
+
+            <a class="project-card" href="https://falconapps.org/portfolio" data-href-en="https://falconapps.org/portfolio" data-href-pt="https://falconapps.org/portfolio" target="_blank" rel="noopener noreferrer">
+              <div class="project-card-head">
+                <p class="project-kicker" data-i18n="proj6Kicker">Browser Automation &amp; More</p>
+                <svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7M7 7h10v10"/>
+                </svg>
+              </div>
+              <h3 class="project-title" data-i18n="proj6Title">Chrome Extensions &amp; Full Catalog</h3>
+              <p class="project-desc" data-i18n="proj6Desc">
+                Published Chrome automation extensions — IG Auto-Follow (TypeScript DOM automation) and WA Bulk Message Sender / Pro (WhatsApp Web workflows) — plus playable Canvas games and client web projects.
+              </p>
+              <div class="tag-row" aria-label="Technologies used">
+                <span class="tag">Chrome Extensions</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">DOM Automation</span>
+                <span class="tag">Canvas API</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Expertise -->
+    <section class="section" id="expertise">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-kicker" data-i18n="skillsKicker">03 / Stack</p>
+          <h2 class="section-title" data-i18n="skillsTitle">Technical Expertise</h2>
+        </div>
+
+        <div class="skills-matrix">
+          <div class="skill-row" data-reveal>
+            <h3 class="skill-category" data-i18n="skillCat1">Languages &amp; Frameworks</h3>
+            <div class="skill-items">
+              <span class="skill-chip">Java 21 / 25</span>
+              <span class="skill-chip">Spring Boot 3 / 4</span>
+              <span class="skill-chip">Spring Data</span>
+              <span class="skill-chip">Spring Security</span>
+              <span class="skill-chip">Spring Cloud</span>
+              <span class="skill-chip">OpenFeign</span>
+              <span class="skill-chip">Project Reactor</span>
+              <span class="skill-chip">JPA / Hibernate</span>
+            </div>
+          </div>
+
+          <div class="skill-row" data-reveal>
+            <h3 class="skill-category" data-i18n="skillCat2">Architecture &amp; APIs</h3>
+            <div class="skill-items">
+              <span class="skill-chip">Microservices</span>
+              <span class="skill-chip">Distributed Systems</span>
+              <span class="skill-chip">Event-Driven Architecture</span>
+              <span class="skill-chip">Hexagonal &amp; Clean Architecture</span>
+              <span class="skill-chip">REST APIs</span>
+              <span class="skill-chip">GraphQL</span>
+              <span class="skill-chip">BFF</span>
+              <span class="skill-chip">OpenAPI / Swagger</span>
+              <span class="skill-chip">SOLID &amp; Design Patterns</span>
+            </div>
+          </div>
+
+          <div class="skill-row" data-reveal>
+            <h3 class="skill-category" data-i18n="skillCat3">Databases &amp; Messaging</h3>
+            <div class="skill-items">
+              <span class="skill-chip">PostgreSQL</span>
+              <span class="skill-chip">SQL Server</span>
+              <span class="skill-chip">MongoDB</span>
+              <span class="skill-chip">Oracle</span>
+              <span class="skill-chip">Redis</span>
+              <span class="skill-chip">Flyway</span>
+              <span class="skill-chip">RabbitMQ</span>
+              <span class="skill-chip">Azure Service Bus</span>
+            </div>
+          </div>
+
+          <div class="skill-row" data-reveal>
+            <h3 class="skill-category" data-i18n="skillCat4">Cloud, Infra &amp; Observability</h3>
+            <div class="skill-items">
+              <span class="skill-chip">Google Cloud (GCP)</span>
+              <span class="skill-chip">Microsoft Azure (AKS)</span>
+              <span class="skill-chip">OCI</span>
+              <span class="skill-chip">Kubernetes</span>
+              <span class="skill-chip">Docker</span>
+              <span class="skill-chip">Gradle</span>
+              <span class="skill-chip">Git &amp; CI/CD</span>
+              <span class="skill-chip">Datadog</span>
+            </div>
+          </div>
+
+          <div class="skill-row" data-reveal>
+            <h3 class="skill-category" data-i18n="skillCat5">Testing &amp; Modern Workflow</h3>
+            <div class="skill-items">
+              <span class="skill-chip">Unit, Integration &amp; E2E Testing</span>
+              <span class="skill-chip">JUnit 5</span>
+              <span class="skill-chip">Mockito</span>
+              <span class="skill-chip">Testcontainers</span>
+              <span class="skill-chip">BDD</span>
+              <span class="skill-chip">AI-Assisted Development (Claude, Cursor)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education, Certifications & Languages -->
+    <section class="section" id="credentials">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-kicker" data-i18n="credKicker">04 / Background</p>
+          <h2 class="section-title" data-i18n="credTitle">Education &amp; Certifications</h2>
+        </div>
+
+        <div class="credentials-grid" data-reveal>
+          <div class="credentials-spacer" aria-hidden="true"></div>
+
+          <div class="credentials-columns">
+            <div>
+              <h3 class="sub-heading" data-i18n="subEducation">Education</h3>
+              <div class="edu-list">
+                <div class="edu-item">
+                  <h4 data-i18n="edu1Title">B.Sc. in Computer Engineering</h4>
+                  <p class="edu-school" data-i18n="edu1School">Federal University of Itajubá (UNIFEI), Brazil</p>
+                  <p class="edu-years">2014 – 2019</p>
+                </div>
+
+                <div class="edu-item">
+                  <h4 data-i18n="edu2Title">MBA in IT Project Management</h4>
+                  <p class="edu-school" data-i18n="edu2School">Descomplica Faculdade Digital</p>
+                  <p class="edu-years">2021 – 2022</p>
+                </div>
+
+                <div class="edu-item">
+                  <h4 data-i18n="edu3Title">Postgraduate Diploma in Software Analysis &amp; Development</h4>
+                  <p class="edu-school" data-i18n="edu3School">Descomplica Faculdade Digital</p>
+                  <p class="edu-years">2021 – 2022</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="sub-heading" data-i18n="subCerts">Certifications</h3>
+              <ul class="cert-list">
+                <li>
+                  <a class="cert-link" href="c/PSM%20I.pdf" target="_blank" rel="noopener noreferrer">
+                    <span>
+                      <span class="cert-name">Professional Scrum Master I (PSM I)</span>
+                      <span class="cert-issuer">Scrum.org</span>
+                    </span>
+                    <svg class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M7 17 17 7M7 7h10v10"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="cert-link" href="c/PSPO_I.pdf" target="_blank" rel="noopener noreferrer">
+                    <span>
+                      <span class="cert-name">Professional Scrum Product Owner I (PSPO I)</span>
+                      <span class="cert-issuer">Scrum.org</span>
+                    </span>
+                    <svg class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M7 17 17 7M7 7h10v10"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="cert-link" href="c/PSK_I.pdf" target="_blank" rel="noopener noreferrer">
+                    <span>
+                      <span class="cert-name">Professional Scrum with Kanban I (PSK I)</span>
+                      <span class="cert-issuer">Scrum.org</span>
+                    </span>
+                    <svg class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M7 17 17 7M7 7h10v10"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="cert-link" href="c/2019-05-10-CertificateLeanSixSigma.pdf" target="_blank" rel="noopener noreferrer">
+                    <span>
+                      <span class="cert-name">Six Sigma Yellow Belt</span>
+                      <span class="cert-issuer">Lean Six Sigma</span>
+                    </span>
+                    <svg class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M7 17 17 7M7 7h10v10"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="cert-link" href="c/2020-06-04-CertificateOfCompletion_Oracle_Database_19c_Basic_SQL.pdf" target="_blank" rel="noopener noreferrer">
+                    <span>
+                      <span class="cert-name">Oracle Database 19c: Basic SQL</span>
+                      <span class="cert-issuer">LinkedIn Learning</span>
+                    </span>
+                    <svg class="cert-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M7 17 17 7M7 7h10v10"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <h3 class="sub-heading" data-i18n="subLanguages">Languages</h3>
+              <div class="lang-list">
+                <div class="lang-card">
+                  <p class="lang-name" data-i18n="langPt">Portuguese</p>
+                  <p class="lang-level" data-i18n="langPtLevel">Native</p>
+                </div>
+                <div class="lang-card">
+                  <p class="lang-name" data-i18n="langEn">English</p>
+                  <p class="lang-level" data-i18n="langEnLevel">Full Professional (C1)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-kicker" data-i18n="contactKicker">05 / Contact</p>
+          <h2 class="section-title" data-i18n="contactTitle">Let’s talk</h2>
+        </div>
+
+        <div class="contact-grid" data-reveal>
+          <div class="credentials-spacer" aria-hidden="true"></div>
+          <div>
+            <p class="contact-lead" data-i18n="contactLead">
+              Open to meaningful conversations on distributed systems, backend architecture, and international engineering teams.
+            </p>
+            <p class="contact-note" data-i18n="contactNote">
+              Based in Brazil (UTC-3) with flexible overlap across US and UK time zones. The best way to reach me is via LinkedIn.
+            </p>
+
+            <div class="contact-rows">
+              <div class="contact-item">
+                <span class="contact-label" data-i18n="labelLinkedin">LinkedIn</span>
+                <a class="contact-value" href="https://www.linkedin.com/in/lucaslamounier08/" target="_blank" rel="noopener noreferrer">linkedin.com/in/lucaslamounier08</a>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-label" data-i18n="labelGithub">GitHub</span>
+                <a class="contact-value" href="https://github.com/lucaslamounier08" target="_blank" rel="noopener noreferrer">github.com/lucaslamounier08</a>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-label" data-i18n="labelFalconApps">FalconApps</span>
+                <a class="contact-value" href="https://falconapps.org/en" data-href-en="https://falconapps.org/en" data-href-pt="https://falconapps.org/" target="_blank" rel="noopener noreferrer">falconapps.org</a>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-label" data-i18n="labelCv">Resume / CV</span>
+                <a class="contact-value" href="c/Lucas_Lamounier_Faria_CV.pdf" target="_blank" rel="noopener noreferrer" data-i18n="btnDownloadCv">Download CV (PDF)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="copyright-year">2026</span> Lucas Lamounier Faria</span>
+      <span data-i18n="footerRight">Built as clean static HTML/CSS/JS · Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
